@@ -37,7 +37,7 @@ _Shrnutí všech odkazů na jednom místě. Průběžně aktualizujte._
 |---|---|
 | GitHub Pages (live) | [`Doplň odkaz`](#) |
 | Grafický manuál (Figma / Canva) | [`Doplň odkaz`](#) |
-| Grafický návrh webu (Figma) | [`Doplň odkaz`](#) |
+| Grafický návrh webu (Figma) | (https://www.figma.com/design/v48uF4Sv71gRfPkcFbva16/Boehmerland-design?node-id=0-1&t=q2I02yusaQm2iBIe-1)(#) |
 | Fotografie / média | [`Doplň odkaz`](#) |
 
 ---
