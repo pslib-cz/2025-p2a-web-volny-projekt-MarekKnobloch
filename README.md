@@ -36,8 +36,8 @@ _Shrnutí všech odkazů na jednom místě. Průběžně aktualizujte._
 | Výstup | Odkaz |
 |---|---|
 | GitHub Pages (live) | (https://pslib-cz.github.io/2025-p2a-web-volny-projekt-MarekKnobloch/) |
-| Grafický manuál (Figma / Canva) |(https://www.figma.com/design/v48uF4Sv71gRfPkcFbva16/Boehmerland-design?node-id=129-9&t=q2I02yusaQm2iBIe-1) |
-| Grafický návrh webu (Figma) | (https://www.figma.com/design/v48uF4Sv71gRfPkcFbva16/Boehmerland-design?node-id=0-1&t=q2I02yusaQm2iBIe-1) |
+| Grafický manuál (Figma / Canva) |(https://www.figma.com/design/uehy4RyMVgPCXfBLm3Y74A/KnoblochMarek?node-id=0-1&t=pBJq52CHgImE7mLr-1) |
+| Grafický návrh webu (Figma) | https://www.figma.com/design/uehy4RyMVgPCXfBLm3Y74A/KnoblochMarek?node-id=4-15&t=pBJq52CHgImE7mLr-1 |
 | Fotografie / média | [`Doplň odkaz`](#) |
 
 ---
