@@ -1,0 +1,16 @@
+:root {
+    --beige: #E5D6BF;
+    --beige-dark: #DDC5A6;
+    --darkgray: #252527;
+    --white: #FFFFFF;
+    --gray-rozdeleni: #373634;
+    --black: #000000;
+    --red-dark: #781616;
+    --beige-half: #E5D6BF80;
+}
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+}
+p, a {
+    font-family: 'Montserrat', sans-serif;
+}
