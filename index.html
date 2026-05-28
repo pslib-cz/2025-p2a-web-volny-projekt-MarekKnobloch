@@ -4,144 +4,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>Boehmerland</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <a href="index.html">Boehmerland</a>
-            <img src="media/heroicons-outline_menu.svg">
+    <header>
+        <div class="navbar">
+            <a href="index.html"><img src="media/icons_svg/logo.svg" alt="logo"></a>
+            <img src="media/icons_svg/hammenu.svg" alt="menu">
         </div>
     </header>
     <main>
         <section class="hero">
 
-            <div class="container">
-                <h1>Stará Duše. Budoucnos Stvořená.</h1>
-                <p>Ručně vyrobené. nadčasové. Stvořené aby vydrželo.</p>
+            <div class="hero__container">
+                <h1>Stará Duše.<br> <span>Budoucnost Stvořená.</span></h1>
+                <p>Ručně vyrobené. nadčasové. <br>Stvořené aby vydrželo.</p>
             </div>
 
         </section>
         <section class="motorky">
 
-            <div class="motorka">
-                <p>01</p>
-                <p>Onyx Black</p>
-                <p>Sytě černá. Nadčasová. Pocta výkonu a preciznosti</p>
-                <a><img src="media/heroicons-outline_menu.svg"></a>
-                <a href="./detailyMotorky.html">zobrazit detaily</a>
-                <img src="media/formkit_arrowright.svg">
+    <div class="motorka">
+        <div class="motorka__container">
+            <div class="motorka__obsah">
+                <p class="poradi__num red__underline red__underline--left ">01</p>
+            <p class="motorka__name">Onyx Black</p>
+            <p class="motorka__text">Sytě černá. <br>Nadčasová.<br> Pocta výkonu <br>a preciznosti</p>
+            </div>
+            <div class="motorka__obrazek">
+                <a><img src="media/obrazky/motorka__karta.png" alt="motorka"></a>
+                </div>
+                </div>
+            <div class="btn">
+                <a href="./detailyMotorky.html">zobrazit detaily
+                    <img src="media/icons_svg/sipka doprava.svg" alt="sipka"></a>
+                
+                </div>
             </div>
 
             <div class="motorka">
-                <p>01</p>
-                <p>Onyx Black</p>
-                <p>Sytě černá. Nadčasová. Pocta výkonu a preciznosti</p>
-                <a><img src="media/heroicons-outline_menu.svg"></a>
-                <a>zobrazit detaily</a>
-                <img src="media/formkit_arrowright.svg">
+        <div class="motorka__container">
+            <div class="motorka__obsah">
+                <p class="poradi__num red__underline red__underline--left ">01</p>
+            <p class="motorka__name">Onyx Black</p>
+            <p class="motorka__text">Sytě černá. <br>Nadčasová.<br> Pocta výkonu <br>a preciznosti</p>
+            </div>
+            <div class="motorka__obrazek">
+                <a><img src="media/obrazky/motorka__karta.png" alt="motorka"></a>
+                </div>
+                </div>
+            <div class="btn">
+                <a href="./detailyMotorky.html">zobrazit detaily
+                    <img src="media/icons_svg/sipka doprava.svg" alt="sipka"></a>
+                
+                </div>
             </div>
 
             <div class="motorka">
-                <p>01</p>
-                <p>Onyx Black</p>
-                <p>Sytě černá. Nadčasová. Pocta výkonu a preciznosti</p>
-                <a><img src="media/heroicons-outline_menu.svg"></a>
-                <a>zobrazit detaily</a>
-                <img src="media/formkit_arrowright.svg">
+        <div class="motorka__container">
+            <div class="motorka__obsah">
+                <p class="poradi__num red__underline red__underline--left ">01</p>
+            <p class="motorka__name">Onyx Black</p>
+            <p class="motorka__text">Sytě černá. <br>Nadčasová.<br> Pocta výkonu <br>a preciznosti</p>
+            </div>
+            <div class="motorka__obrazek">
+                <a><img src="media/obrazky/motorka__karta.png" alt="motorka"></a>
+                </div>
+                </div>
+            <div class="btn">
+                <a href="./detailyMotorky.html">zobrazit detaily
+                    <img src="media/icons_svg/sipka doprava.svg" alt="sipka"></a>
+                
+                </div>
             </div>
         </section>
         <section class="oNás">
+            <div class="oNás__wrapper">
             <h3>O Boehmerland</h3>
-            <h2>Stvořeno s účelem.</h2>
+            <h2>Stvořeno <br>s účelem.</h2>
             <p>Bohmerland Je víc než stroj. Je to spojení dědictví a inovace,
-                navržené pro ty, kteří oceňují vyjímečnost, řemeslo a nadčasový výkon.
+                navržené pro ty, kteří oceňují vyjímečnost, řemeslo a nadčasový výkon.</p>
 
-                Každý detail. Každá část. Každá jízda. Stvořeno, aby vydrželo.</p>
-            <a><img src="media/heroicons-outline_menu.svg"></a>
-
+                <p>Každý detail. Každá část. Každá jízda. Stvořeno, aby vydrželo.</p>
+                <div class="oNás__container">
+            <a class="image"><img src="media/obrazky/mechanik.jpg"></a>
+            </div>
+                </div>
         </section>
         <section class="technickeUdaje">
-
-            <h2>Technické údaje</h2>
-            <div class="udaj">
+            <div class="podtrzeni">
+            <h2 class="red red__underline">Technické údaje</h2>
+            </div>
+            <div class="udaj__wrapper">
+                
+                <div class="udaj">
                 <img src="media/icons_svg/rychlost.svg">
-                <div class="text-Container">
-                    <p>Maximální rychlost</p>
-                    <p>220 KM/H</p>
+                <div class="text-container">
+                    <p class="udaj__text">Maximální rychlost</p>
+                    <p class="udaj__text">220 KM/H</p>
                 </div>
             </div>
             <div class="udaj">
                 <img src="media/icons_svg/rychlost.svg">
-                <div class="text-Container">
-                    <p>Maximální rychlost</p>
-                    <p>220 KM/H</p>
+                <div class="text-container">
+                    <p class="udaj__text">Maximální rychlost</p>
+                    <p class="udaj__text">220 KM/H</p>
                 </div>
             </div>
             <div class="udaj">
                 <img src="media/icons_svg/rychlost.svg">
-                <div class="text-Container">
-                    <p>Maximální rychlost</p>
-                    <p>220 KM/H</p>
+                <div class="text-container">
+                    <p class="udaj__text">Maximální rychlost</p>
+                    <p class="udaj__text">220 KM/H</p>
                 </div>
             </div>
-
+            <div class="udaj">
+                <img src="media/icons_svg/rychlost.svg">
+                <div class="text-container">
+                    <p class="udaj__text">Maximální rychlost</p>
+                    <p class="udaj__text">220 KM/H</p>
+                </div>
+            </div>
+            </div>
+            <div class="line"></div>
         </section>
         <section class="udalosti">
 
-            <h2>Události</h2>
-            <h2>Odkazy na výstavy</h2>
-            <p>Od prestižních motoristických show po kulturní akce na míru. Boehmerland dál inspiruje</p>
+            <h2 class="red red__underline">Události</h2>
+            <h2 class="white">Odkazy na výstavy</h2>
+            <p class="white okraje">Od prestižních motoristických show po kulturní akce na míru. Boehmerland dál inspiruje</p>
             <div class="vystavy-container">
-                <a class="vystava">
+               <a href="detailyMotorky.html" class="vystava">
                     <img src="media/obrazky/cerno_zlata.png">
-                    <p>Nazev vystavy</p>
-                    <p>Misto</p>
-                    <a href="detailyMotorky.html">zobrazit detaily</a>
+                    <div class="vystava__container">
+                    <p class="white">Nazev vystavy</p>
+                    <p class="white">Misto</p>
+                    </div>
                 </a>
-                <a class="vystava">
+                <a href="detailyMotorky.html" class="vystava">
                     <img src="media/obrazky/cerno_zlata.png">
-                    <p>Nazev vystavy</p>
-                    <p>Misto</p>
-                    <a href="detailyMotorky.html">zobrazit detaily</a>
+                    <div class="vystava__container">
+                    <p class="white">Nazev vystavy</p>
+                    <p class="white">Misto</p>
+                    </div>
                 </a>
-                <a class="vystava">
+                <a href="detailyMotorky.html" class="vystava">
                     <img src="media/obrazky/cerno_zlata.png">
-                    <p>Nazev vystavy</p>
-                    <p>Misto</p>
-                    <a href="detailyMotorky.html">zobrazit detaily</a>
+                    <div class="vystava__container">
+                    <p class="white">Nazev vystavy</p>
+                    <p class="white">Misto</p>
+                    </div>
                 </a>
             </div>
         </section>
         <section class="customize">
-            <h2>Vytvoř si svůj</h2>
+            <h2 class="red">Vytvoř si svůj</h2>
             <p>vyber si barvu. nakonfiguruj své detaily. vytvoř si stroj, který je jedinečně tvůj.</p>
-            <a href="kontakt.html">konfigurovat nyní<img src="media/icons_svg/sipka doprava.svg"></a>
-            <div class="vlastnost">
-                <img src="media/icons_svg/naradi.svg">
-                <div class="text-Container">
-                    <p>Maximální rychlost</p>
-                    <p>220 KM/H</p>
+            <a  href="kontakt.html" class="btn btn--fill">konfigurovat nyní<img src="media/icons_svg/sipka doprava.svg"></a>
+            <div class="vlastnosti__wrapper">
+            <div class="udaj udaj--dark">
+                <img src="media/icons_svg/rychlost.svg">
+                <div class="text-container">
+                    <p class="udaj__text gray">Maximální rychlost</p>
+                    <p class="udaj__text gray">220 KM/H</p>
                 </div>
             </div>
-            <div class="vlastnost">
-                <img src="media/icons_svg/naradi.svg">
-                <div class="text-Container">
-                    <p>Maximální rychlost</p>
-                    <p>220 KM/H</p>
+            <div class="udaj udaj--dark">
+                <img src="media/icons_svg/rychlost.svg">
+                <div class="text-container">
+                    <p class="udaj__text gray">Maximální rychlost</p>
+                    <p class="udaj__text gray">220 KM/H</p>
                 </div>
             </div>
-            <div class="vlastnost">
-                <img src="media/icons_svg/naradi.svg">
-                <div class="text-Container">
-                    <p>Maximální rychlost</p>
-                    <p>220 KM/H</p>
+            <div class="udaj udaj--dark">
+                <img src="media/icons_svg/rychlost.svg">
+                <div class="text-container">
+                    <p class="udaj__text gray">Maximální rychlost</p>
+                    <p class="udaj__text gray">220 KM/H</p>
                 </div>
+            </div>
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer>
         <div class="container">
             <div>
                 <div>
@@ -166,7 +213,8 @@
                             <a href="#">Ochrana osobních údajů</a>
                         </div>
                     </div>
-                    <div class="Kontakt">
+                    <div class="kontakt">
+                        <p>Kontakt</p>
                         <a href="#"><img src="media/icons_svg/mail.svg">info@boehmerland.com </a>
                         <a href="#"><img src="media/icons_svg/telefon.svg">+420 123 456 789</a>
                     </div>

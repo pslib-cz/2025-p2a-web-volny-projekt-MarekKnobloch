@@ -8,9 +8,194 @@
     --red-dark: #781616;
     --beige-half: #E5D6BF80;
 }
+html, body {
+    margin: 0;
+    padding: 0;
+}
 h1, h2, h3 {
     font-family: 'Cinzel', serif;
 }
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h3 {
+    color: var(--red-dark);
+}
 p, a {
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: var(--black);
+}
+html {
+    background-color: var(--beige);
+
+}
+span {
+    color: var(--red-dark);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.poradi__num {
+    margin: 0;
+    text-align: left;
+    color: var(--red-dark);
+}
+.poradi {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.red__underline--left {
+    justify-self: left;
+}
+
+.motorka__name {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0.5em 0px 0.5em 0px;
+}
+.motorka__container {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    gap: 8px;
+}
+.motorka {
+ text-align: center;
+ background-color: var(--beige);
+ margin-bottom: 24px;
+ padding: 0em 0 1em 0;
+}
+.motorka__text {
+text-align: left;
+}
+.motorka__obrazek {
+    align-self: center;
+    object-fit: fill;
+    text-align: center;
+}
+.motorka__obsah {
+    padding: 24px;
+}
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    color: var(--red-dark);
+    border: 1px solid var(--red-dark);
+}
+.oNás{
+    background-color: var(--beige-dark);
+}
+.oNás__wrapper{
+    padding: 1.5em;
+}
+.image {
+    display: inline-block;
+    
+}
+.oNás__container {
+    text-align: center;
+}
+.technickeUdaje {
+    background-color: var(--darkgray);
+    padding: 1.5em;
+    text-align: center;
+}
+.red {
+    color: var(--red-dark);
+    justify-self: center;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    justify-content: left;
+}
+.udaj {
+    display: inline-flex;
+    gap: 16px;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 1.5em;
+}
+.udaj__text {
+    margin: 0;
+    text-align: left;
+    color: var(--white);
+}
+.udaj__wrapper {
+    text-align: center;
+}
+.red__underline::after {
+    content: "";
+    display: block;
+    width: 2em;
+    height: 1px;
+    background-color: var(--red-dark);
+    justify-self: center;
+}
+.udalosti {
+    background-color: var(--darkgray);
+    text-align: center;
+}
+.white {
+color: var(--white);
+}
+.okraje {
+    padding: 1em;
+}
+.vystava {
+    position: relative;
+    display: inline-block;
+    margin: 1em 0 1em 0;
+}
+.vystava__container {
+    text-align: left;
+position: absolute;
+top: 0;
+left: 0;
+padding-left: 8px;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--gray-rozdeleni);
+    margin: 1em 0;
+}
+.customize {
+    text-align: center;
+    padding: 1.5em;
+}
+.btn--fill {
+    background-color: var(--red-dark);
+    color: var(--beige);
+}
+.vlastnosti__wrapper {
+    
+}
+.gray {
+    color: var(--darkgray);
+}
+footer {
+    background-color: var(--darkgray);
+    text-align: center;
+    padding: 1em;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin: 0 1em;
+}
+.kontakt {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
 }
