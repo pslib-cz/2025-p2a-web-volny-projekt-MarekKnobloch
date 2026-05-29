@@ -31,6 +31,14 @@ p, a {
     color: var(--black);
     font-weight: 500;
 }
+.img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
 html {
     background-color: var(--beige);
 
@@ -43,6 +51,7 @@ span {
     justify-content: space-between;
     align-items: center;
     padding: 0.5em 1.5em 0.5em 1.5em;
+    background-color: var(--beige-half);
 }
 .hero__container {
     padding: 0 1.5em 10em 1.5em;
@@ -100,11 +109,18 @@ text-align: left;
     padding: 8px 16px;
     color: var(--red-dark);
     border: 1px solid var(--red-dark);
+    margin: 0 auto;
+    width: 320px;
+    text-align: center;
 }
 .oNás{
     background-color: var(--beige-dark);
 }
 .oNás__wrapper{
+    padding: 1.5em;
+}
+.oNás__info {
+    background-color: var(--beige);
     padding: 1.5em;
 }
 .image {
@@ -214,4 +230,64 @@ footer {
 }
 strong {
     font-weight: 600;
+}
+.btn--noOutline {
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    width: auto;
+}
+.cinzel {
+    font-family: 'Cinzel', serif;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 2em;
+}
+.technickeSpecifikace {
+    background-color: var(--darkgray);
+    padding: 1.5em;
+    text-align: center;
+}
+.specifikace {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 1.5em;
+}
+.line--noMargin {
+    margin: 0;
+}
+.specifikace--noMargin {
+    margin-bottom: 0;
+}
+.gallery {
+    text-align: center;
+    padding: 1.5em;
+}
+.vlastnosti {
+    background-color: var(--darkgray);
+    padding: 1.5em;
+    text-align: center;
+}
+.customize {
+    
+    padding: 1.5em;
+}
+.beige {
+    color: var(--beige);
+}
+.center {
+    display: inline-block;
+    width: 100%;
+}
+.vlastnosti {
+display: flex;
+justify-content: center;
+flex-direction: column;
 }

@@ -5,44 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O nás</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <a href="index.html">Boehmerland</a>
-            <img src="media/heroicons-outline_menu.svg">
+    <header>
+        <div class="navbar">
+            <a href="index.html"><img src="media/icons_svg/logo.svg" alt="logo"></a>
+            <img src="media/icons_svg/hammenu.svg" alt="menu">
         </div>
     </header>
     <main>
-        <a href="index.html"><img src="media/icons_svg/sipka zpet.svg">zpět</a>
-        <section class="oNás">
+        <a class="btn btn--noOutline cinzel" href="index.html"><img src="media/icons_svg/sipka zpet.svg">zpět</a>
+        <section class="oNás__info">
+            
             <h3>O Boehmerland</h3>
-            <h2>Stvořeno s účelem.</h2>
+            <h2>Stvořeno <br><span>s účelem.</span></h2>
             <p>Bohmerland Je víc než stroj. Je to spojení dědictví a inovace,
-                navržené pro ty, kteří oceňují vyjímečnost, řemeslo a nadčasový výkon.
+                navržené pro ty, kteří oceňují vyjímečnost, řemeslo a nadčasový výkon.</p>
 
-                Každý detail. Každá část. Každá jízda. Stvořeno, aby vydrželo.</p>
-            <a><img src="media/obrazky/motorka_mechanik.jpg"></a>
-            <div class="vlastnost">
-                <img src="media/icons_svg/naradi.svg">
-                <div class="text-Container">
-                    <p>Maximální rychlost</p>
-                    <p>220 KM/H</p>
+                <p> Každý detail. Každá část. Každá jízda. Stvořeno, aby vydrželo.</p>
+           </section>
+                <a class="center"><img class="img" src="media/obrazky/motorka_mechanik.jpg"></a>
+            <section class="vlastnosti">
+                
+            <div class="udaj">
+                <img src="media/icons_svg/rychlost.svg">
+                <div class="text-container">
+                    <p class="udaj__text">Maximální rychlost</p>
+                    <p class="udaj__text">220 KM/H</p>
                 </div>
             </div>
-            <div class="vlastnost">
-                <img src="media/icons_svg/naradi.svg">
-                <div class="text-Container">
-                    <p>Maximální rychlost</p>
-                    <p>220 KM/H</p>
+            <div class="udaj">
+                <img src="media/icons_svg/rychlost.svg">
+                <div class="text-container">
+                    <p class="udaj__text">Hmotnost</p>
+                    <p class="udaj__text">150 kg</p>
                 </div>
             </div>
-            <div class="vlastnost">
+            <div class="udaj">
                 <img src="media/icons_svg/naradi.svg">
-                <div class="text-Container">
-                    <p>Maximální rychlost</p>
-                    <p>220 KM/H</p>
+                <div class="text-container">
+                    <p class="udaj__text">Maximální rychlost</p>
+                    <p class="udaj__text">220 KM/H</p>
                 </div>
             </div>
         </section>
@@ -73,7 +78,7 @@
         </section>
 
     </main>
-    <footer class="footer">
+    <footer>
         <div class="container">
             <div>
                 <div>
@@ -81,7 +86,7 @@
                         <div>
                             <div>
                                 <img src="media/icons_svg/logo.svg">
-                                <p>Turnov, 511 01, Krátká 263</p>
+                                <p class="beige">Turnov, 511 01, Krátká 263</p>
                             </div>
                             <div class="icons">
                                 <a href="#"><img src="media/icons_svg/instagram.svg"></a>
@@ -90,20 +95,21 @@
                             </div>
                         </div>
                         <div class="info">
-                            <p>Informace</p>
-                            <a href="#">O nás</a>
-                            <a href="#">Kontakt</a>
-                            <a href="#">Sociální sítě</a>
-                            <a href="#">Obchodní podmínky</a>
-                            <a href="#">Ochrana osobních údajů</a>
+                            <p class="beige"><strong>Informace</strong></p>
+                            <a class="beige" href="./Onás.html">O nás</a>
+                            <a class="beige" href="./kontakt.html">Kontakt</a>
+                            <a class="beige" href="#">Sociální sítě</a>
+                            <a class="beige" href="#">Obchodní podmínky</a>
+                            <a class="beige" href="#">Ochrana osobních údajů</a>
                         </div>
                     </div>
-                    <div class="Kontakt">
-                        <a href="#"><img src="media/icons_svg/mail.svg">info@boehmerland.com </a>
-                        <a href="#"><img src="media/icons_svg/telefon.svg">+420 123 456 789</a>
+                    <div class="kontakt">
+                        <p class="beige"><strong>Kontakt</strong></p>
+                        <a class="beige" href="#" class="center"><img src="media/icons_svg/mail.svg">info@boehmerland.com </a>
+                        <a class="beige" href="#"><img src="media/icons_svg/telefon.svg">+420 123 456 789</a>
                     </div>
                 </div>
-                <p>©2024 Böhmerland. Všechna práva vyhrazena</p>
+                <p class="beige">©2024 Böhmerland. Všechna práva vyhrazena</p>
             </div>
     </footer>
 </body>
