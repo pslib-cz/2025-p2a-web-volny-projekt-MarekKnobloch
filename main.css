@@ -204,11 +204,14 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
-    margin: 0 1em;
 }
 .kontakt {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    justify-content: center;
+}
+.center {
+    align-items: center;
+}
+strong {
+    font-weight: 600;
 }
