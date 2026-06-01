@@ -31,6 +31,20 @@ p, a {
     color: var(--black);
     font-weight: 500;
 }
+svg.icon {
+    display: inline-block;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+svg.icon--black {
+    color: var(--black);
+}
+svg.icon--red {
+    color: var(--red-dark);
+}
+svg.icon--beig0 {
+    color: var(--beige);
+}
 .img {
     width: 100%;
     height: 100%;
@@ -41,7 +55,6 @@ p, a {
 }
 html {
     background-color: var(--beige);
-
 }
 span {
     color: var(--red-dark);
@@ -54,13 +67,16 @@ span {
     background-color: var(--beige-half);
 }
 .hero__container {
+    margin-top: 1.5em;
     padding: 0 1.5em 10em 1.5em;
 }
-.background {
-    background-image: url("media/obrazky/hero_img.jpg");
-    background-size: cover;
-    background-position: center;
+.hero__obsah {
+    background-color: var(--beige-half);
+    display: inline-block;
+    padding: 1.5em;
+    border-radius: 0.5em
 }
+
 .poradi__num {
     margin: 0;
     text-align: left;
@@ -77,7 +93,7 @@ span {
 }
 
 .motorka__name {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 600;
     margin: 0.5em 0px 0.5em 0px;
 }
@@ -90,8 +106,9 @@ span {
 .motorka {
  text-align: center;
  background-color: var(--beige);
- margin-bottom: 24px;
+ margin-bottom: 1.5em;
  padding: 0em 0 1em 0;
+ min-width: 350px;
 }
 .motorka__text {
 text-align: left;
@@ -102,39 +119,31 @@ text-align: left;
     text-align: center;
 }
 .motorka__obsah {
-    padding: 24px;
+    padding: 1em 0em 1em 1em;
 }
 .btn {
     display: inline-block;
-    padding: 8px 16px;
+    padding: 0.5em 1em;
     color: var(--red-dark);
     border: 1px solid var(--red-dark);
     margin: 0 auto;
-    width: 320px;
     text-align: center;
 }
-.oNás{
-    background-color: var(--beige-dark);
-}
+
 .oNás__wrapper{
     padding: 1.5em;
 }
 .oNás__info {
     background-color: var(--beige);
-    padding: 1.5em;
+    padding:  0 1.5em 1.5em 1.5em;
 }
 .image {
     display: inline-block;
-    
 }
 .oNás__container {
     text-align: center;
 }
-.technickeUdaje {
-    background-color: var(--darkgray);
-    padding: 1.5em;
-    text-align: center;
-}
+
 .red {
     color: var(--red-dark);
     justify-self: center;
@@ -169,10 +178,7 @@ text-align: left;
     background-color: var(--red-dark);
     justify-self: center;
 }
-.udalosti {
-    background-color: var(--darkgray);
-    text-align: center;
-}
+
 .white {
 color: var(--white);
 }
@@ -205,17 +211,17 @@ padding-left: 8px;
     background-color: var(--red-dark);
     color: var(--beige);
 }
-.vlastnosti__wrapper {
-    
+ .btn svg {
+    margin-left: 0.35em;
+}
+.btn.btn--noOutline svg {
+    margin-left: 0;
+    margin-right: 0.35em;
 }
 .gray {
     color: var(--darkgray);
 }
-footer {
-    background-color: var(--darkgray);
-    text-align: center;
-    padding: 1em;
-}
+
 .info {
     display: flex;
     flex-direction: column;
@@ -275,10 +281,7 @@ strong {
     padding: 1.5em;
     text-align: center;
 }
-.customize {
-    
-    padding: 1.5em;
-}
+
 .beige {
     color: var(--beige);
 }
@@ -290,4 +293,189 @@ strong {
 display: flex;
 justify-content: center;
 flex-direction: column;
+}
+.kontakt-info {
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+}
+.gray {
+    color: var(--darkgray);
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1.5em
+}
+.zprava {
+text-align: center;
+}
+.vystavy-container {
+    text-align: center;
+}
+.vystavy__text {
+padding: 1.5em;
+}
+footer .container {
+    display: grid;
+    grid-template-areas:
+        "brand"
+        "info"
+        "kontakt"
+        "copyright";
+    justify-items: center;
+    gap: 1.5em;
+    text-align: center;
+}
+footer .footer__brand,
+footer .info,
+footer .kontakt {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    align-items: center;
+}
+footer .footer__brand {
+    grid-area: brand;
+}
+
+footer .info {
+    grid-area: info;
+}
+
+footer .kontakt {
+    grid-area: kontakt;
+}
+
+footer .container > p {
+    grid-area: copyright;
+}
+
+footer .icons {
+    display: flex;
+    gap: 0.75em;
+    justify-content: center;
+}
+footer .kontakt a svg {
+    margin-right: 0.35em;
+}
+footer .icons a {
+    color: var(--beige);
+}
+
+.kontakt-info .udaj svg,
+.technickeUdaje .udaj svg,
+.vlastnosti .udaj svg,
+.customize .udaj svg {
+    color: var(--red-dark);
+}
+.background {
+    background-image: url("media/obrazky/hero_img.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-area: HEAD;
+}
+.motorky {
+    grid-area: MOTORKY;
+}
+.oNás{
+    background-color: var(--beige-dark);
+    grid-area: ONÁS;
+}
+.technickeUdaje {
+    background-color: var(--darkgray);
+    padding: 1.5em;
+    text-align: center;
+    grid-area: TECHNICKEUDAJE;
+}
+.udalosti {
+    background-color: var(--darkgray);
+    text-align: center;
+    grid-area: UDALOSTI;
+}
+.customize {
+    
+    padding: 1.5em;
+    grid-area: CUSTOMIZE;
+}
+footer {
+    background-color: var(--darkgray);
+    text-align: center;
+    padding: 1em;
+    grid-area: FOOTER;
+}
+body {
+    display: grid;
+    grid-template-areas: HEAD 
+                        MOTORKY
+                        ONÁS
+                        TECHNICKEUDAJE
+                        UDALOSTI
+                        CUSTOMIZE
+                        FOOTER ;
+}
+@media (min-width: 1024px) {
+    .motorky {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 2em 0 2em 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    footer .container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-areas:
+            "brand info kontakt"
+            "copyright copyright copyright";
+        align-items: start;
+        justify-items: center;
+        text-align: center;
+    }
+
+    footer .footer__brand,
+    footer .info,
+    footer .kontakt {
+        align-items: center;
+    }
+
+    footer .icons {
+        justify-content: center;
+    }
+
+    footer .container > p {
+        justify-self: center;
+    }
 }
