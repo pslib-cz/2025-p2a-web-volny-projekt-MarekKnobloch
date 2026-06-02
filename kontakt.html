@@ -35,8 +35,25 @@
     </svg>
     <header>
         <div class="navbar">
-            <a href="index.html"><img src="media/icons_svg/logo.svg" alt="logo"></a>
-            <svg class="icon icon--black" width="24" height="24" aria-hidden="true" focusable="false"><use href="#icon-menu"></use></svg>
+            <a href="index.html"><img class="img" src="media/icons_svg/logo.svg" alt="logo"></a>
+            <div class="hamburger-row">
+                <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone" aria-label="Otevřít menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <nav class="hamburger-nav hamburger-zone">
+                <ul>
+                    <li><a href="./Onás.html">O nás</a></li>
+                    <li><a href="./detailyMotorky.html#galerie">Galerie</a></li>
+                    <li><a href="./kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="header-social" aria-label="Sociální sítě">
+                <a href="#" aria-label="Instagram"><img src="media/icons_svg/instagram.svg" alt="" class="header-social__icon"></a>
+                <a href="#" aria-label="Pinterest"><img src="media/icons_svg/pinterest.svg" alt="" class="header-social__icon"></a>
+            </div>
         </div>
     </header>
     <main>
@@ -46,7 +63,7 @@
             <h2>rádi vám odpovíme.</h2>
             <p>Máte otázky? Chcete se dozvědět více o Boehmerland? Kontaktujte náš tým pro více informací, podporu nebo
                 jen pro sdílení své vášně pro motorky.</p>
-            <div class="kontakt-info">
+            <div class="kontakt__info">
                 
             <div class="udaj">
                 <svg class="icon icon--red" width="24" height="24" aria-hidden="true" focusable="false"><use href="#icon-speed"></use></svg>
@@ -92,7 +109,7 @@
     <footer>
         <div class="container">
             <div class="footer__brand">
-                <img src="media/icons_svg/logo.svg" alt="Boehmerland">
+                <img class="img" src="media/icons_svg/logo.svg" alt="Boehmerland">
                 <p class="beige">Turnov, 511 01, Krátká 263</p>
                 <div class="icons">
                     <a href="#" aria-label="Instagram"><svg class="icon icon--beige" width="32" height="32" aria-hidden="true" focusable="false"><use href="#icon-instagram"></use></svg></a>
@@ -116,6 +133,8 @@
             <p class="beige">©2024 Böhmerland. Všechna práva vyhrazena</p>
         </div>
     </footer>
+
+    <script src="ham.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,166 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* hamburger menu */
+.hamburger-row {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    background-color: var(--beige-half);
+}
+
+.hamburger-nav {
+    display: none;
+    background-color: var(--beige-half);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    flex: 0 0 100%;
+    width: 100%;
+    order: 3;
+}
+
+.hamburger {
+    width: 44px;
+    height: 32px;
+    position: relative;
+    display: block;
+    color: var(--black);
+}
+
+.hamburger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: currentColor;
+    border-radius: 999px;
+    transform-origin: center;
+    transition: transform 0.25s ease, top 0.25s ease, bottom 0.25s ease, opacity 0.2s ease;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger span:nth-child(2) {
+    top: 14px;
+}
+
+.hamburger span:nth-child(3) {
+    bottom: 0;
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(1) {
+    top: 14px;
+    transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(3) {
+    top: 14px;
+    bottom: auto;
+    transform: rotate(-45deg);
+}
+
+.hamburger-nav.active {
+    display: block;
+}
+
+.hamburger-nav ul {
+    margin: 0;
+    padding: 0.75em 1.5em 1em;
+    list-style: none;
+    text-align: right;
+
+}
+
+.hamburger-nav li {
+    display: block;
+    padding: 0.7em 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.hamburger-nav a {
+    display: block;
+    color: var(--black);
+}
+
+.hamburger-nav a:hover {
+    color: var(--red-dark);
+}
+
+.hamburger-nav li + li {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.header-social {
+    display: none;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.header-social__icon {
+    display: block;
+    width: 28px;
+    height: 28px;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 1.5rem;
+        position: relative;
+        flex-wrap: nowrap;
+    }
+
+    .hamburger-row {
+        display: none;
+    }
+
+    .hamburger-nav {
+        display: block;
+        position: static;
+        justify-self: center;
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        z-index: 20;
+        flex: 0 1 auto;
+        width: auto;
+        order: initial;
+    }
+
+    .hamburger-nav ul {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 0;
+        
+    }
+
+    .hamburger-nav li + li {
+        border-top: 0;
+    }
+
+    .header-social {
+        display: flex;
+        justify-self: end;
+    }
+}
+/*konec*/
+
 :root {
     --beige: #E5D6BF;
     --beige-dark: #DDC5A6;
@@ -47,11 +208,10 @@ svg.icon--beig0 {
 }
 .img {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: block;
     margin: 0;
     padding: 0;
-    object-fit: cover;
 }
 html {
     background-color: var(--beige);
@@ -109,6 +269,8 @@ span {
  margin-bottom: 1.5em;
  padding: 0em 0 1em 0;
  min-width: 350px;
+max-width: 600px;
+ margin: 0 auto;
 }
 .motorka__text {
 text-align: left;
@@ -132,11 +294,15 @@ text-align: left;
 
 .oNás__wrapper{
     padding: 1.5em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .oNás__info {
     background-color: var(--beige);
     padding:  0 1.5em 1.5em 1.5em;
 }
+
 .image {
     display: inline-block;
 }
@@ -154,13 +320,17 @@ text-align: left;
     gap: 0.5em;
     justify-content: left;
 }
+.udaje {
+    display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1em;
+}
 .udaj {
     display: inline-flex;
     gap: 16px;
     align-items: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-right: 1.5em;
+    margin: 1em 0;
 }
 .udaj__text {
     margin: 0;
@@ -169,6 +339,10 @@ text-align: left;
 }
 .udaj__wrapper {
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
 }
 .red__underline::after {
     content: "";
@@ -188,7 +362,6 @@ color: var(--white);
 .vystava {
     position: relative;
     display: inline-block;
-    margin: 1em 0 1em 0;
 }
 .vystava__container {
     text-align: left;
@@ -228,11 +401,14 @@ padding-left: 8px;
     gap: 0.5em;
 }
 .kontakt {
-    display: flex;
-    flex-direction: column;
+    padding: 1.5em;
+
 }
-.center {
-    align-items: center;
+.kontakt__info {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 strong {
     font-weight: 600;
@@ -281,23 +457,18 @@ strong {
     padding: 1.5em;
     text-align: center;
 }
-
+.vlastnosti__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
 .beige {
     color: var(--beige);
 }
 .center {
-    display: inline-block;
     width: 100%;
-}
-.vlastnosti {
-display: flex;
-justify-content: center;
-flex-direction: column;
-}
-.kontakt-info {
-   display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 16px;
+    align-items: center;
 }
 .gray {
     color: var(--darkgray);
@@ -313,11 +484,19 @@ flex-direction: column;
 .zprava {
 text-align: center;
 }
+.vystavy {
+    padding-bottom: 1.5em;
+}
 .vystavy-container {
-    text-align: center;
+        text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
 }
 .vystavy__text {
 padding: 1.5em;
+text-align: center;
 }
 footer .container {
     display: grid;
@@ -395,6 +574,7 @@ footer .icons a {
     background-color: var(--darkgray);
     text-align: center;
     grid-area: UDALOSTI;
+    padding-bottom: 1.5em;
 }
 .customize {
     
@@ -407,21 +587,29 @@ footer {
     padding: 1em;
     grid-area: FOOTER;
 }
+.pad {
+    padding-bottom: 0.5em;
+}
 body {
     display: grid;
-    grid-template-areas: HEAD 
-                        MOTORKY
-                        ONÁS
-                        TECHNICKEUDAJE
-                        UDALOSTI
-                        CUSTOMIZE
-                        FOOTER ;
+    grid-template-areas: "HEAD" 
+                        "MOTORKY"
+                        "ONÁS"
+                        "TECHNICKEUDAJE"
+                        "UDALOSTI"
+                        "CUSTOMIZE"
+                        "FOOTER" ;
 }
 @media (min-width: 1024px) {
     .motorky {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin: 2em 0 2em 0;
+    }
+    .oNás__wrapper {
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 2em;
     }
 }
 
