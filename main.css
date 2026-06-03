@@ -400,14 +400,17 @@ padding-left: 8px;
     flex-direction: column;
     gap: 0.5em;
 }
-.kontakt {
+.kontakty {
     padding: 1.5em;
+    grid-area: kontakt;
+
 
 }
 .kontakt__info {
+    justify-self: center;
     justify-content: center;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 1em;
 }
 strong {
@@ -473,16 +476,9 @@ strong {
 .gray {
     color: var(--darkgray);
 }
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 1.5em
-}
 .zprava {
 text-align: center;
+grid-area: zprava;
 }
 .vystavy {
     padding-bottom: 1.5em;
@@ -590,16 +586,128 @@ footer {
 .pad {
     padding-bottom: 0.5em;
 }
-body {
-    display: grid;
-    grid-template-areas: "HEAD" 
-                        "MOTORKY"
-                        "ONÁS"
-                        "TECHNICKEUDAJE"
-                        "UDALOSTI"
-                        "CUSTOMIZE"
-                        "FOOTER" ;
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;   
+    align-items: stretch;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1.5em;
+    
 }
+.contact-form input {
+    padding: 0.5em;
+    border: none;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 0.25em;
+}
+.width {
+width: 100%;
+}
+.contact-form__textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    resize: vertical;
+    box-sizing: border-box;
+    border-radius: 0.25em;
+}
+.contact-form__button {
+    padding: 0.5em;
+}
+.contact-form__consent {
+    align-items: center;
+}
+.contact-form__checkbox {
+    width: 20px;
+    
+    align-self: center;
+}
+/* Napište nám */
+
+
+.contact-form__input {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    box-sizing: border-box;
+}
+
+.contact-form__textarea {
+    width: 100%;
+    height: 150px;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.contact-form__button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    background-color: var(--red-dark);
+    color: var(--beige);
+}
+
+.contact-form__button:hover {
+
+}
+
+.contact-form__consent {
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-form__checkbox-label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.875rem;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+}
+
+.contact-form__label {
+    font-size: 0.875rem;
+}
+.kontakt__img {
+    display: none;
+}
+.kontakt__layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 1024px) {
     .motorky {
         display: grid;
@@ -611,10 +719,19 @@ body {
         align-items: center;
         gap: 2em;
     }
+    .kontakt__info {
+        flex-direction: row;
+    }
+    .contact-form {
+        max-width: 800px;
+}
+.kontakt__img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
 }
 
-
-
+}
 
 
 

@@ -58,11 +58,13 @@
     </header>
     <main>
         <a class="btn btn--noOutline cinzel" href="index.html"><svg class="icon icon--red" width="20" height="20" aria-hidden="true" focusable="false"><use href="#icon-arrow-left"></use></svg>zpět</a>
-        <section class="kontakt">
+        <div class="kontakt__layout">
+        <section class="kontakty">
             <h3>Kontakt</h3>
             <h2>rádi vám odpovíme.</h2>
             <p>Máte otázky? Chcete se dozvědět více o Boehmerland? Kontaktujte náš tým pro více informací, podporu nebo
                 jen pro sdílení své vášně pro motorky.</p>
+                <a><img class="kontakt__img" src="media/obrazky/motorka__karta.png"></a>
             <div class="kontakt__info">
                 
             <div class="udaj">
@@ -91,9 +93,9 @@
         <section class="zprava">
             <h2 class="section__title">Napište nám</h2>
             <form action="#" method="post" class="contact-form">
-                <input type="text" name="name" placeholder="Jméno a příjmení*" class="contact-form__input" required>
-                <input type="email" name="email" placeholder="E-mail*" class="contact-form__input" required>
-                <input type="text" name="subject" placeholder="Předmět*" class="contact-form__input" required>
+                <input type="text" name="name" placeholder="Jméno a příjmení*" class="contact-form__input width" required>
+                <input type="email" name="email" placeholder="E-mail*" class="contact-form__input width" required>
+                <input type="text" name="subject" placeholder="Předmět*" class="contact-form__input width" required>
                 <textarea name="message" placeholder="Vaše zpráva*" class="contact-form__textarea" rows="10"
                     cols="25" required></textarea>
                 <p class="contact-form__label">* Povinné pole</p>
@@ -104,7 +106,7 @@
                 <button type="submit" class="contact-form__button">Odeslat zprávu</button>
             </form>
         </section>
-        
+        </div>
     </main>
     <footer>
         <div class="container">
