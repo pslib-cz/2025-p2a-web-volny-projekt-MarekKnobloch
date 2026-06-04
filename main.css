@@ -427,12 +427,14 @@ strong {
 }
 .flex {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 16px;
     padding: 2em;
+    justify-content: space-around;
+}
+.part1, .part2 {
 }
 .technickeSpecifikace {
-    background-color: var(--darkgray);
     padding: 1.5em;
     text-align: center;
 }
@@ -703,7 +705,31 @@ width: 100%;
 
 
 
+@media (min-width: 768px) {
+    footer .container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-areas:
+            "brand info kontakt"
+            "copyright copyright copyright";
+        align-items: start;
+        justify-items: center;
+        text-align: center;
+    }
 
+    footer .footer__brand,
+    footer .info,
+    footer .kontakt {
+        align-items: center;
+    }
+
+    footer .icons {
+        justify-content: center;
+    }
+
+    footer .container > p {
+        justify-self: center;
+    }
+}
 
 
 
@@ -730,7 +756,17 @@ width: 100%;
     width: 100%;
     max-width: 600px;
 }
+.spec {
+        width: 400px;
+    }
+    .big {
+        width: 400px;
+    }
 
+}
+
+@media (min-width: 1440px) {
+    
 }
 
 
@@ -757,30 +793,3 @@ width: 100%;
 
 
 
-
-
-@media (min-width: 768px) {
-    footer .container {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        grid-template-areas:
-            "brand info kontakt"
-            "copyright copyright copyright";
-        align-items: start;
-        justify-items: center;
-        text-align: center;
-    }
-
-    footer .footer__brand,
-    footer .info,
-    footer .kontakt {
-        align-items: center;
-    }
-
-    footer .icons {
-        justify-content: center;
-    }
-
-    footer .container > p {
-        justify-self: center;
-    }
-}
