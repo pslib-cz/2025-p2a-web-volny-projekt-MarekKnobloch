@@ -24,6 +24,11 @@
     width: 100%;
     order: 3;
 }
+svg {
+    width: 24px;
+    height: 24px;
+    color: var(--beige);
+}
 
 .hamburger {
     width: 44px;
@@ -403,9 +408,10 @@ padding-left: 8px;
 .kontakty {
     padding: 1.5em;
     grid-area: kontakt;
-
-
+    display: flex;
+    justify-content: space-around;
 }
+
 .kontakt__info {
     justify-self: center;
     justify-content: center;
@@ -453,7 +459,7 @@ strong {
 .specifikace--noMargin {
     margin-bottom: 0;
 }
-.gallery {
+.galerie {
     text-align: center;
     padding: 1.5em;
 }
@@ -481,6 +487,8 @@ strong {
 .zprava {
 text-align: center;
 grid-area: zprava;
+background-color: var(--beige-dark);
+padding: 1.5em;
 }
 .vystavy {
     padding-bottom: 1.5em;
@@ -596,7 +604,7 @@ footer {
     align-items: stretch;
     max-width: 400px;
     margin: 0 auto;
-    padding: 1.5em;
+    padding: 1.5em 0 1.5em 0;
     
 }
 .contact-form input {
@@ -685,9 +693,7 @@ width: 100%;
     display: none;
 }
 .kontakt__layout {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    
 }
 .vlastnosti--light {
     background-color: var(--beige);
@@ -695,7 +701,25 @@ width: 100%;
 .udaj__text--light {
     color: var(--darkgray);
 }
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+    padding: 1.5em;
+}
 
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
 
 
 
@@ -770,8 +794,9 @@ width: 100%;
 }
 .nextTo {
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
     padding: 1.5em;
+    gap: 8rem;
 }
 }
 
