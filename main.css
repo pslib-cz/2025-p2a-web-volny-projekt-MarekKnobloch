@@ -689,9 +689,12 @@ width: 100%;
     flex-wrap: wrap;
     justify-content: center;
 }
-
-
-
+.vlastnosti--light {
+    background-color: var(--beige);
+}
+.udaj__text--light {
+    color: var(--darkgray);
+}
 
 
 
@@ -762,13 +765,32 @@ width: 100%;
     .big {
         width: 400px;
     }
-
+.center {
+    max-width: 600px;
+}
+.nextTo {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5em;
+}
 }
 
 @media (min-width: 1440px) {
-    
+    .spec {
+        width: 600px;
+    }
+    .big {
+        width: 600px;
+    }
 }
-
+@media (min-width: 1920px) {
+    .spec {
+        width: 800px;
+    }
+    .big {
+        width: 800px;
+    }
+}
 
 
 
