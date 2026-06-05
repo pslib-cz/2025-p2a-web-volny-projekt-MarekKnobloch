@@ -201,7 +201,21 @@ svg.icon {
     display: inline-block;
     vertical-align: middle;
     flex-shrink: 0;
+    color: var(--darkgray);
 }
+.icon__color--darkgray {
+    color: var(--darkgray);
+}
+.icon__color--white {
+    color: var(--white);
+}
+.icon__color--red--beige {
+    color: var(--beige);
+}
+.icon__color--red {
+    color: var(--red-dark);
+}
+
 svg.icon--black {
     color: var(--black);
 }
