@@ -175,6 +175,7 @@ svg {
     --gray-rozdeleni: #373634;
     --black: #000000;
     --red-dark: #781616;
+    --red-dark-hover: #BF1D1D;
     --beige-half: #E5D6BF80;
 }
 html, body {
@@ -330,7 +331,12 @@ text-align: left;
 .oNás__container {
     text-align: center;
 }
-
+.btn:hover {
+    background-color: var(--beige-dark);
+}
+.btn--fill:hover {
+    background-color: var(--red-dark-hover);
+}
 .red {
     color: var(--red-dark);
     justify-self: center;
