@@ -28,6 +28,7 @@ svg {
     width: 24px;
     height: 24px;
     color: var(--beige);
+    vertical-align: middle;
 }
 
 .hamburger {
@@ -43,7 +44,7 @@ svg {
     left: 0;
     width: 100%;
     height: 3px;
-    background: currentColor;
+    background: var(--darkgray);
     border-radius: 999px;
     transform-origin: center;
     transition: transform 0.25s ease, top 0.25s ease, bottom 0.25s ease, opacity 0.2s ease;
@@ -303,14 +304,15 @@ text-align: left;
     padding: 1em 0em 1em 1em;
 }
 .btn {
-    display: inline-block;
+    display: inline-flex;
     padding: 0.5em 1em;
     color: var(--red-dark);
     border: 1px solid var(--red-dark);
-    margin: 0 auto;
-    text-align: center;
+    gap: 0.5em;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
 }
-
 .oNás__wrapper{
     padding: 1.5em;
     display: flex;
@@ -319,7 +321,7 @@ text-align: left;
 }
 .oNás__info {
     background-color: var(--beige);
-    padding:  0 1.5em 1.5em 1.5em;
+    padding:  0 2em 2em 2em;
 }
 
 .image {
@@ -349,7 +351,9 @@ gap: 1em;
     display: inline-flex;
     gap: 16px;
     align-items: center;
-    margin: 1em 0;
+    
+    margin: 0 auto;
+    margin-top: 1em;
 }
 .udaj__text {
     margin: 0;
@@ -359,9 +363,11 @@ gap: 1em;
 .udaj__wrapper {
     text-align: center;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1em;
+    margin-bottom: 1em;
 }
 .red__underline::after {
     content: "";
@@ -484,9 +490,10 @@ strong {
 }
 .vlastnosti__wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 1em;
-    flex-wrap: wrap;
+    margin-top: 1em;
 }
 .beige {
     color: var(--beige);
@@ -513,6 +520,7 @@ padding: 1.5em;
     justify-content: center;
     gap: 1.5em;
     flex-wrap: wrap;
+    padding: 1Em;
 }
 .vystavy__text {
 padding: 1.5em;
@@ -572,7 +580,7 @@ footer .icons a {
     color: var(--red-dark);
 }
 .background {
-    background-image: url("media/obrazky/hero_img.jpg");
+    background-image: url("media/obrazky/hero_img.webp");
     background-size: cover;
     background-position: center;
     grid-area: HEAD;
@@ -583,6 +591,7 @@ footer .icons a {
 .oNás{
     background-color: var(--beige-dark);
     grid-area: ONÁS;
+    
 }
 .technickeUdaje {
     background-color: var(--darkgray);
@@ -756,7 +765,19 @@ width: 100%;
         justify-items: center;
         text-align: center;
     }
-
+    .vlastnosti__wrapper {
+        flex-direction: row;
+        gap: 2em;
+    }
+    .udaj__wrapper {
+        flex-direction: row;
+        justify-content: center;
+        gap: 3em;
+    }
+    .udaj {
+        margin-right: 0;
+        margin-left: 0;
+    }
     footer .footer__brand,
     footer .info,
     footer .kontakt {
@@ -781,9 +802,25 @@ width: 100%;
         grid-template-columns: repeat(3, 1fr);
         margin: 2em 0 2em 0;
     }
+    .vlastnosti__wrapper {
+        gap: 5em;
+    }
+    .oNás__text {
+        padding-left: 2em;
+    }
+    .udaje {
+        gap: 3em;
+    }
+    .udaj__wrapper {
+        gap: 5em;
+    }
+    .kontakt__text {
+        padding-left: 2em;
+    }
     .oNás__wrapper {
         flex-wrap: nowrap;
         align-items: center;
+        justify-content: space-between;
         gap: 2em;
     }
     .kontakt__info {
@@ -815,6 +852,12 @@ width: 100%;
 }
 
 @media (min-width: 1440px) {
+    .udaj__wrapper {
+        gap: 6em;
+    }
+    .vlastnosti__wrapper {
+        gap: 6em;
+    }
     .spec {
         width: 600px;
     }
